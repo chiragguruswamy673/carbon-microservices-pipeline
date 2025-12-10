@@ -3,6 +3,7 @@ package ui;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -14,7 +15,14 @@ public class UiRegressionTest {
     public void setup() {
         base = System.getProperty("base.url", "http://localhost:8080");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");          // run without GUI
+        options.addArguments("--no-sandbox");            // required in CI
+        options.addArguments("--disable-dev-shm-usage"); // avoid /dev/shm issues
+        options.addArguments("--remote-allow-origins=*"); // keep compatibility
+
+        driver = new ChromeDriver(options);
     }
 
     @Test
