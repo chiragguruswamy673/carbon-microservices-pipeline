@@ -1,0 +1,8 @@
+# Default ignored files
+/../../carbon-microservices-pipeline./.idea/shelf/
+/../../carbon-microservices-pipeline./.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../carbon-microservices-pipeline./.idea/httpRequests/
+# Datasource local storage ignored files
+/../../carbon-microservices-pipeline./.idea/dataSources/
+/../../carbon-microservices-pipeline./.idea/dataSources.local.xml
