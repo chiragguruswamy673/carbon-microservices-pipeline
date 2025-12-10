@@ -1,0 +1,1 @@
+{"uuid":"b51d0986-71dc-42fc-8fd1-9fb3e36a3350","name":"api.ApiContractTest","children":["c23fbe76-c41d-4656-8a0e-5cc8d49d89e8"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1765378569910,"stop":1765378570182}],"afters":[],"start":1765378569879,"stop":1765378572171}
