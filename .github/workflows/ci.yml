@@ -28,11 +28,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Run tests
-        run: mvn -B clean test -Dbase.url=https://www.wikipedia.org
+      - name: Run TestNG Suite
+        run: mvn -B clean test -DsuiteXmlFile=testng.xml -Dbase.url=https://www.wikipedia.org
 
-      - name: Upload surefire reports
+      - name: Upload Surefire Reports
         uses: actions/upload-artifact@v4
         with:
           name: surefire-reports
           path: target/surefire-reports/
+
+      - name: Generate Allure Report
+        run: mvn allure:report
+
+      - name: Upload Allure HTML
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: target/site/allure-maven-plugin/
+
+      - name: Upload Carbon Dashboard
+        uses: actions/upload-artifact@v4
+        with:
+          name: carbon-dashboard
+          path: target/reports/index.html
