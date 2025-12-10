@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carbon-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: carbon-api }
+  template:
+    metadata:
+      labels: { app: carbon-api }
+    spec:
+      containers:
+        - name: api
+          image: carbon-api:local
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: carbon-api
+spec:
+  selector:
+    app: carbon-api
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 32124   # optional, must be between 30000–32767
+  type: NodePort

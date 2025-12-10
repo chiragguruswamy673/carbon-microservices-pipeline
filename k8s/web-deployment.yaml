@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carbon-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: carbon-web }
+  template:
+    metadata:
+      labels: { app: carbon-web }
+    spec:
+      containers:
+        - name: web
+          image: carbon-web:local
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: API_URL
+              value: http://carbon-api:8080
+          ports:
+            - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: carbon-web
+spec:
+  selector: { app: carbon-web }
+  ports:
+    - port: 3000
+      targetPort: 3000
+  type: NodePort

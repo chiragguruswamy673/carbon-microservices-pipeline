@@ -5,8 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58dad784-4d8a-48de-ba52-ea3341b70c4e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/src/test/java/accessibility/AccessibilityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/src/test/java/accessibility/AccessibilityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/src/test/java/ui/UiRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/src/test/java/ui/UiRegressionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/k8s/api-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/k8s/web-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/api/src/main/java/com/carbon/api/CarbonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/api/src/main/java/com/carbon/api/controller/MetricsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/api/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/web/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/web/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/services/web/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../carbon-microservices-pipeline/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../carbon-microservices-pipeline/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,19 +30,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../carbon-microservices-pipeline" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="36em6iJezAvjaiRZmp7pYFPxFic" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,11 +56,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.CarbonApplication.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.CarbonApplication.executor": "Run",
     "TestNG.AccessibilityTest.executor": "Run",
     "TestNG.ApiContractTest.executor": "Run",
+    "TestNG.C:/Users/monis/IdeaProjects/carbon-microservices-pipeline/k8s/api-deployment.yaml.executor": "Run",
+    "TestNG.C:/Users/monis/IdeaProjects/carbon-microservices-pipeline/k8s/web-deployment.yaml.executor": "Run",
     "TestNG.UiRegressionTest.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
@@ -51,9 +79,19 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/monis/IdeaProjects/carbon-microservices-pipeline/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\monis\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="381e29e9-a322-4c7a-a1cf-ac0c40e46817" reportId="carbon-microservices-pipeline./qodana/2025-12-10" />
+      <ReportDescription localRun="true" path="C:\Users\monis\AppData\Local\Temp\qodana_output1\qodana.sarif.json" reportGuid="c46151b0-d06f-46e0-ac12-17bec7c16ea3" reportId="carbon-microservices-pipeline./qodana/2025-12-11" />
+    </option>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -69,11 +107,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1765375239337</updated>
-      <workItem from="1765375240267" duration="4343000" />
+      <workItem from="1765375240267" duration="10812000" />
+      <workItem from="1765395013418" duration="337000" />
+      <workItem from="1765395746160" duration="2689000" />
+      <workItem from="1765398470968" duration="2347000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
